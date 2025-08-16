@@ -398,8 +398,9 @@
                         class="text-gray-600 hover:text-[#d7470a] px-3 py-2 rounded-md text-sm font-bold transition-colors">Home</a>
                     <a href="#about"
                         class="text-gray-600 hover:text-[#d7470a] px-3 py-2 rounded-md text-sm font-bold transition-colors">About</a>
-                    <a href="#products"
-                        class="text-gray-600 hover:text-[#d7470a] px-3 py-2 rounded-md text-sm font-bold transition-colors">Products</a>
+                    <a href="#hall-of-fame"
+                        class="text-gray-600 hover:text-[#d7470a] px-3 py-2 rounded-md text-sm font-bold transition-colors">Hall
+                        of Fames</a>
                     <a href="#gallery"
                         class="text-gray-600 hover:text-[#d7470a] px-3 py-2 rounded-md text-sm font-bold transition-colors">Gallery</a>
                     <a href="#contact"
@@ -430,8 +431,9 @@
                     class="block px-3 py-2 rounded-md text-base font-medium text-gray-800 hover:bg-gray-100">Home</a>
                 <a href="#about"
                     class="block px-3 py-2 rounded-md text-base font-medium text-gray-800 hover:bg-gray-100">About</a>
-                <a href="#products"
-                    class="block px-3 py-2 rounded-md text-base font-medium text-gray-800 hover:bg-gray-100">Products</a>
+                <a href="#hall-of-fame"
+                    class="block px-3 py-2 rounded-md text-base font-medium text-gray-800 hover:bg-gray-100">Hall of
+                    Fame</a>
                 <a href="#gallery"
                     class="block px-3 py-2 rounded-md text-base font-medium text-gray-800 hover:bg-gray-100">Gallery</a>
                 <a href="#contact"
@@ -933,46 +935,46 @@
             </div>
         </section>
 
-        <section id="hall-of-fame" class="py-24 overflow-hidden" style="background-color:#3a5a40;">
-            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-        
-                    <!-- Left Column: Dynamic Text Content -->
-                    <div class="text-center lg:text-left h-80 lg:h-auto flex flex-col justify-center">
-                        <div id="hof-text-content" class="transition-opacity duration-300 ease-in-out">
-                            <!-- Controlled by JS -->
+    <section id="hall-of-fame" class="scroll-mt-24 py-16 sm:py-24 overflow-hidden" style="background-color:#3a5a40;">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
+    
+                <!-- Left Column -->
+                <div class="text-center lg:text-left flex flex-col justify-center">
+                    <div id="hof-text-content" class="transition-opacity duration-300 ease-in-out">
+                        <!-- Controlled by JS -->
+                    </div>
+                </div>
+    
+                <!-- Right Column: Swiper -->
+                <div class="hof-swiper-container relative w-full">
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper" id="hof-swiper-wrapper">
+                            <!-- Populated by JS -->
                         </div>
                     </div>
-        
-                    <!-- Right Column: Swiper Carousel -->
-                    <div class="hof-swiper-container relative">
-                        <div class="swiper mySwiper">
-                            <div class="swiper-wrapper" id="hof-swiper-wrapper">
-                                <!-- Populated by JS -->
-                            </div>
-                        </div>
-        
-                        <!-- Navigation Arrows (bottom center) -->
-                        <div class="flex justify-center gap-6 mt-4">
-                            <button
-                                class="swiper-button-prev opacity-50 hover:opacity-100 transition p-2 bg-black/40 rounded-full">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" fill="none"
-                                    viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
-                                </svg>
-                            </button>
-                            <button
-                                class="swiper-button-next opacity-50 hover:opacity-100 transition p-2 bg-black/40 rounded-full">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" fill="none"
-                                    viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
-                                </svg>
-                            </button>
-                        </div>
+    
+                    <!-- Navigation Arrows -->
+                    <div class="flex justify-center gap-6 mt-4">
+                        <button
+                            class="swiper-button-prev opacity-50 hover:opacity-100 transition p-2 sm:p-3 bg-black/40 rounded-full">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 sm:h-6 sm:w-6 text-white" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+                            </svg>
+                        </button>
+                        <button
+                            class="swiper-button-next opacity-50 hover:opacity-100 transition p-2 sm:p-3 bg-black/40 rounded-full">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 sm:h-6 sm:w-6 text-white" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                            </svg>
+                        </button>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
         <section id="gallery" class="py-24 bg-white">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="text-center mb-20">
@@ -1130,7 +1132,7 @@
                     <ul class="space-y-2  text-sm">
                         <li><a href="#home" class="hover:text-white transition-colors">Home</a></li>
                         <li><a href="#about" class="hover:text-white transition-colors">About Us</a></li>
-                        <li><a href="#products" class="hover:text-white transition-colors">Products</a></li>
+                        <li><a href="#hall-of-fame" class="hover:text-white transition-colors">Products</a></li>
                         <li><a href="#gallery" class="hover:text-white transition-colors">Gallery</a></li>
                         <li><a href="#contact" class="hover:text-white transition-colors">Contact</a></li>
                     </ul>
@@ -1174,10 +1176,12 @@
             </div>
             <div class="mt-10">
                 <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3539.348924588447!2d83.47132907545966!3d27.48952197630807!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjfCsDI5JzIyLjMiTiA4M8KwMjgnMjYuMSJF!5e0!3m2!1sen!2snp!4v1737356332228!5m2!1sen!2snp"
-                    width="100%" height="200" style="border:0; border-radius:12px; min-width:180px;" allowfullscreen=""
-                    loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3536.2322898149306!2d83.470597!3d27.682565!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399687ef6f0b0a3b%3A0x0000000000000000!2sMid%20western%20div%2C%20MFJC%2BX6W%2C%20Butwal%2032907!5e0!3m2!1sen!2snp!4v1734459999999!5m2!1sen!2snp"
+                    width="100%" height="250" style="border:0; border-radius:12px; min-width:180px;" allowfullscreen=""
+                    loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
             </div>
+
             <div class="border-t border-gray-700 mt-8 pt-8 text-sm text-center">
                 <p>© <span id="current-year"></span> NCC Alumni Association – Lumbini Province. All Rights Reserved.</p>
             </div>
@@ -1305,39 +1309,35 @@
                         "Enhanced cadet contributions to nation-building",
                         "Guides NCCAA alumni in leadership and civic engagement"
                     ]
-                },
+                }
             ];
 
             const hofTextContent = document.getElementById('hof-text-content');
             const hofWrapper = document.getElementById('hof-swiper-wrapper');
 
             const updateHofText = (person) => {
-                hofTextContent.innerHTML = `
-                <h1 class="text-center text-5xl font-extrabold mb-12" style="color: #f1faee;"> Hall of Fame </h1>
-                <p class="mt-2 text-3xl font-bold tracking-tight text-white">${person.title}</p>
-                <p class="mt-6 text-lg text-gray-200">${person.desc}</p>
-                <div class="mt-8 space-y-4 text-gray-200 max-w-md mx-auto lg:mx-0">
+                hofTextContent.innerHTML = `<h1 class="text-center text-3xl sm:text-4xl lg:text-5xl font-extrabold mb-8 sm:mb-12" style="color: #f1faee;">Hall of Fame</h1>
+                <p class="mt-2 text-xl sm:text-2xl lg:text-3xl font-bold tracking-tight text-white">${person.title}</p>
+                <p class="mt-4 sm:mt-6 text-base sm:text-lg text-gray-200">${person.desc}</p>
+                <div class="mt-6 sm:mt-8 space-y-3 sm:space-y-4 text-gray-200 max-w-md mx-auto lg:mx-0">
                     ${person.features.map(f => `
                     <div class="flex items-center">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="#ffb703">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
-        </svg>
-        <span class="ml-3">${f}</span>
-        </div>
-        `).join('')}
-    </div>
-    `;
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 sm:h-6 sm:w-6 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="#ffb703">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                        </svg><span class="ml-2 sm:ml-3">${f}</span>
+        </div>`).join('')}
+    </div>`;
             };
 
-            // Populate Swiper slides (smaller images)
+            // Populate slides
             hallOfFame.forEach(p => {
                 const slide = document.createElement('div');
                 slide.className = 'swiper-slide flex justify-center';
                 slide.innerHTML = `
-                <div class="flex flex-col items-center max-w-sm">
-                    <img src="${p.img}" alt="${p.title}" class="rounded-lg w-full h-64 object-cover"/>
-                    <h3 class="text-lg font-bold text-white mt-2">${p.title}</h3>
-                </div>`;
+    <div class="flex flex-col items-center max-w-xs sm:max-w-sm">
+        <img src="${p.img}" alt="${p.title}" class="rounded-lg w-full h-48 sm:h-64 lg:h-72 object-contain"/>
+        <h3 class="text-base sm:text-lg font-bold text-white mt-2 text-center">${p.title}</h3>
+    </div>`;
                 hofWrapper.appendChild(slide);
             });
 
@@ -1348,14 +1348,8 @@
             const swiper = new Swiper(".mySwiper", {
                 slidesPerView: 1,
                 loop: true,
-                autoplay: {
-                    delay: 4000,
-                    disableOnInteraction: false,
-                },
-                navigation: {
-                    nextEl: ".swiper-button-next",
-                    prevEl: ".swiper-button-prev",
-                }
+                autoplay: { delay: 4000, disableOnInteraction: false },
+                navigation: { nextEl: ".swiper-button-next", prevEl: ".swiper-button-prev" }
             });
 
             // Sync text
