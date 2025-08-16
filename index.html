@@ -306,12 +306,12 @@
         }
 
         .district {
-            fill: var(--lumbini-blue);
-            stroke: white;
-            stroke-width: 1;
-            transition: all 0.3s ease;
-            cursor: pointer;
-        }
+    fill: var(--lumbini-blue, #4da6ff); /* fallback to a visible blue */
+    stroke: #fff;
+    stroke-width: 1;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
 
         .district:hover {
             fill: var(--ncc-gold);
@@ -375,6 +375,27 @@
         .accent-border {
             border-left: 4px solid var(--ncc-maroon);
         }
+
+
+        .popup {
+    position: absolute;
+    background: white;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 6px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+    display: none;
+    max-width: 250px;
+    font-family: sans-serif;
+    font-size: 14px;
+    z-index: 1000;
+}
+
+.popup h4 {
+    margin: 0 0 5px;
+    font-size: 16px;
+    font-weight: bold;
+}
     </style>
 </head>
 
@@ -866,8 +887,14 @@
                             <text x="400" y="50" text-anchor="middle" font-family="Playfair Display" font-size="24"
                                 font-weight="bold" fill="var(--ncc-maroon)">Lumbini Province</text>
                         </svg>
+                        <div id="popup" class="popup">
+                            <h4 id="popupName"></h4>
+                            <p id="popupInfo"></p>
+                        </div>
                     </div>
                 </div>
+
+
             </div>
         </section>
 
@@ -909,31 +936,7 @@
             </div>
         </div>
 
-        <section id="counter-section" class="py-20 bg-slate-100">
-            <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
-                    <div>
-                        <h4 class="font-extrabold text-4xl lg:text-5xl" style="color:#d7470a"><span class="counter"
-                                data-target="14">0</span>+</h4>
-                        <p class="text-sm font-medium text-gray-600 mt-2">Years of Experience</p>
-                    </div>
-                    <div>
-                        <h4 class="font-extrabold text-4xl lg:text-5xl" style="color:#d7470a"><span class="counter"
-                                data-target="50">0</span>+</h4>
-                        <p class="text-sm font-medium text-gray-600 mt-2">Dedicated Professionals</p>
-                    </div>
-                    <div>
-                        <h4 class="font-extrabold text-4xl lg:text-5xl" style="color:#d7470a"><span class="counter"
-                                data-target="1000">0</span>+</h4>
-                        <p class="text-sm font-medium text-gray-600 mt-2">Clients Across Asia</p>
-                    </div>
-                    <div>
-                        <h4 class="font-extrabold text-4xl lg:text-5xl" style="color:#d7470a">ISO</h4>
-                        <p class="text-sm font-medium text-gray-600 mt-2">Certified Quality</p>
-                    </div>
-                </div>
-            </div>
-        </section>
+       
 
         <section id="hall-of-fame" class="scroll-mt-24 py-16 sm:py-24 overflow-hidden"
             style="background-color:#3a5a40;">
@@ -1484,53 +1487,41 @@
 
 
         document.addEventListener('DOMContentLoaded', function () {
-            const districts = document.querySelectorAll('.district');
-            const infoPanel = document.getElementById('infoPanel');
-            const overlay = document.getElementById('overlay');
-            const districtName = document.getElementById('districtName');
-            const districtInfo = document.getElementById('districtInfo');
+                const districts = document.querySelectorAll('.district');
+                const popup = document.getElementById('popup');
+                const popupName = document.getElementById('popupName');
+                const popupInfo = document.getElementById('popupInfo');
 
-            // Show district info
-            function showDistrictInfo(district) {
-                const name = district.getAttribute('data-name');
-                const info = district.getAttribute('data-info');
+                // Show popup
+                function showPopup(district, event) {
+                    popupName.textContent = district.getAttribute('data-name');
+                    popupInfo.textContent = district.getAttribute('data-info');
 
-                districtName.textContent = name;
-                districtInfo.textContent = info;
+                    // Position popup near mouse click
+                    const offsetX = 15; // distance from cursor
+                    const offsetY = 15;
+                    popup.style.left = (event.pageX + offsetX) + 'px';
+                    popup.style.top = (event.pageY + offsetY) + 'px';
 
-                // Highlight selected district
-                districts.forEach(d => d.classList.remove('active'));
-                district.classList.add('active');
+                    popup.style.display = 'block';
+                }
 
-                // Show panel and overlay
-                infoPanel.classList.add('active');
-                overlay.classList.add('active');
-            }
+                // Hide popup
+                function hidePopup() {
+                    popup.style.display = 'none';
+                }
 
-            // Hide district info
-            function hideDistrictInfo() {
-                infoPanel.classList.remove('active');
-                overlay.classList.remove('active');
-                districts.forEach(d => d.classList.remove('active'));
-            }
-
-            // Add click event to districts
-            districts.forEach(district => {
-                district.addEventListener('click', function (e) {
-                    e.stopPropagation();
-                    showDistrictInfo(this);
+                // Event listeners
+                districts.forEach(district => {
+                    district.addEventListener('click', function (e) {
+                        e.stopPropagation();
+                        showPopup(this, e);
+                    });
                 });
-            });
 
-            // Close when clicking overlay or anywhere else
-            overlay.addEventListener('click', hideDistrictInfo);
-            document.addEventListener('click', hideDistrictInfo);
-
-            // Prevent panel from closing when clicking inside it
-            infoPanel.addEventListener('click', function (e) {
-                e.stopPropagation();
+                // Hide when clicking anywhere else
+                document.addEventListener('click', hidePopup);
             });
-        });
     </script>
 </body>
 
