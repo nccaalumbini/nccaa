@@ -283,7 +283,7 @@
             animation: floatY 3.5s ease-in-out infinite;
         }
 
-    root {
+        root {
             --ncc-maroon: #8e1c1c;
             --ncc-gold: #d4af37;
             --lumbini-blue: #1a365d;
@@ -291,20 +291,20 @@
             --off-white: #f8f7f5;
             --dark-gray: #2d3748;
         }
-        
+
         body {
             font-family: 'Montserrat', sans-serif;
             background-color: var(--off-white);
             color: var(--dark-gray);
         }
-        
+
         .ncc-divider {
             height: 2px;
             background: linear-gradient(90deg, transparent, var(--ncc-gold), var(--ncc-maroon), var(--ncc-gold), transparent);
             width: 80%;
             margin: 1rem auto;
         }
-        
+
         .district {
             fill: var(--lumbini-blue);
             stroke: white;
@@ -312,18 +312,18 @@
             transition: all 0.3s ease;
             cursor: pointer;
         }
-        
+
         .district:hover {
             fill: var(--ncc-gold);
             filter: drop-shadow(0 0 5px rgba(212, 175, 55, 0.5));
         }
-        
+
         .district.active {
             fill: var(--ncc-gold);
             stroke-width: 2;
             filter: drop-shadow(0 0 8px rgba(212, 175, 55, 0.7));
         }
-        
+
         .info-panel {
             position: fixed;
             top: 50%;
@@ -340,12 +340,12 @@
             pointer-events: none;
             transition: opacity 0.3s ease;
         }
-        
+
         .info-panel.active {
             opacity: 1;
             pointer-events: all;
         }
-        
+
         .overlay {
             position: fixed;
             top: 0;
@@ -358,12 +358,12 @@
             pointer-events: none;
             transition: opacity 0.3s ease;
         }
-        
+
         .overlay.active {
             opacity: 1;
             pointer-events: all;
         }
-        
+
         .section-card {
             background: white;
             border-radius: 12px;
@@ -371,7 +371,7 @@
             overflow: hidden;
             border-top: 4px solid var(--ncc-maroon);
         }
-        
+
         .accent-border {
             border-left: 4px solid var(--ncc-maroon);
         }
@@ -705,7 +705,7 @@
             </div>
         </section>
 
-        
+
         <section class="py-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
             <!-- Header -->
             <div class="text-center mb-12">
@@ -717,7 +717,7 @@
                 </h1>
                 <div class="ncc-divider"></div>
             </div>
-        
+
             <!-- Content Grid -->
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
                 <!-- About Content -->
@@ -730,40 +730,45 @@
                         provincial chapter representing former NCC cadets across all 12 districts of Lumbini Province.
                     </p>
                     <p class="mb-6 leading-relaxed">
-                        We serve as a bridge between trained NCC alumni, local communities, and government bodies, working in
+                        We serve as a bridge between trained NCC alumni, local communities, and government bodies,
+                        working in
                         coordination with the NCC Directorate of the Nepal Army.
                     </p>
                     <div class="bg-off-white p-6 rounded-lg accent-border">
                         <h4 class="font-bold text-ncc-maroon text-lg mb-3">Our Core Focus</h4>
                         <ul class="space-y-2">
                             <li class="flex items-start">
-                                <svg class="w-5 h-5 text-ncc-maroon mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor"
-                                    viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7">
+                                <svg class="w-5 h-5 text-ncc-maroon mr-2 mt-0.5 flex-shrink-0" fill="none"
+                                    stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M5 13l4 4L19 7">
                                     </path>
                                 </svg>
                                 <span>Youth leadership development programs</span>
                             </li>
                             <li class="flex items-start">
-                                <svg class="w-5 h-5 text-ncc-maroon mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor"
-                                    viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7">
+                                <svg class="w-5 h-5 text-ncc-maroon mr-2 mt-0.5 flex-shrink-0" fill="none"
+                                    stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M5 13l4 4L19 7">
                                     </path>
                                 </svg>
                                 <span>Disaster preparedness and response</span>
                             </li>
                             <li class="flex items-start">
-                                <svg class="w-5 h-5 text-ncc-maroon mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor"
-                                    viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7">
+                                <svg class="w-5 h-5 text-ncc-maroon mr-2 mt-0.5 flex-shrink-0" fill="none"
+                                    stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M5 13l4 4L19 7">
                                     </path>
                                 </svg>
                                 <span>Community service initiatives</span>
                             </li>
                             <li class="flex items-start">
-                                <svg class="w-5 h-5 text-ncc-maroon mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor"
-                                    viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7">
+                                <svg class="w-5 h-5 text-ncc-maroon mr-2 mt-0.5 flex-shrink-0" fill="none"
+                                    stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M5 13l4 4L19 7">
                                     </path>
                                 </svg>
                                 <span>Patriotic education and national unity</span>
@@ -771,7 +776,7 @@
                         </ul>
                     </div>
                 </div>
-        
+
                 <!-- Interactive Map -->
                 <div class="section-card p-0 overflow-hidden">
                     <div class="p-6">
@@ -790,65 +795,71 @@
                                 data-name="Bardiya"
                                 data-info="Bardiya district is home to the famous Bardiya National Park. NCCAA activities focus on wildlife conservation and disaster response training.">
                             </path>
-        
+
                             <!-- Banke -->
                             <path id="banke" class="district" d="M200,100 L250,90 L280,130 L230,150 L200,120 Z"
                                 data-name="Banke"
                                 data-info="Banke serves as an important commercial hub. NCCAA coordinates youth leadership programs here.">
                             </path>
-        
+
                             <!-- Dang -->
-                            <path id="dang" class="district" d="M230,150 L280,130 L320,150 L300,200 L250,190 Z" data-name="Dang"
+                            <path id="dang" class="district" d="M230,150 L280,130 L320,150 L300,200 L250,190 Z"
+                                data-name="Dang"
                                 data-info="Dang is the provincial capital. NCCAA runs leadership camps and disaster preparedness workshops.">
                             </path>
-        
+
                             <!-- Rukum East -->
                             <path id="rukum-east" class="district" d="M300,200 L350,180 L380,220 L330,250 L300,230 Z"
                                 data-name="Rukum East"
                                 data-info="Rukum East features stunning natural landscapes. NCCAA conducts environmental programs here.">
                             </path>
-        
+
                             <!-- Rolpa -->
                             <path id="rolpa" class="district" d="M330,250 L380,220 L420,250 L380,280 L350,270 Z"
                                 data-name="Rolpa"
                                 data-info="Rolpa has historical significance. NCCAA organizes patriotic education programs.">
                             </path>
-        
+
                             <!-- Pyuthan -->
                             <path id="pyuthan" class="district" d="M380,280 L420,250 L460,270 L430,310 L400,300 Z"
                                 data-name="Pyuthan"
                                 data-info="Pyuthan is known for religious sites. NCCAA runs civic education initiatives.">
                             </path>
-        
+
                             <!-- Arghakhanchi -->
                             <path id="arghakhanchi" class="district" d="M400,300 L430,310 L460,350 L420,360 L390,330 Z"
                                 data-name="Arghakhanchi"
                                 data-info="Arghakhanchi produces medicinal herbs. NCCAA supports agricultural development.">
                             </path>
-        
+
                             <!-- Gulmi -->
-                            <path id="gulmi" class="district" d="M390,330 L420,360 L380,380 L350,350 Z" data-name="Gulmi"
+                            <path id="gulmi" class="district" d="M390,330 L420,360 L380,380 L350,350 Z"
+                                data-name="Gulmi"
                                 data-info="Gulmi is famous for coffee. NCCAA conducts skill training programs."></path>
-        
+
                             <!-- Palpa -->
-                            <path id="palpa" class="district" d="M350,350 L380,380 L340,400 L310,370 Z" data-name="Palpa"
-                                data-info="Palpa has rich cultural heritage. NCCAA organizes leadership seminars."></path>
-        
+                            <path id="palpa" class="district" d="M350,350 L380,380 L340,400 L310,370 Z"
+                                data-name="Palpa"
+                                data-info="Palpa has rich cultural heritage. NCCAA organizes leadership seminars.">
+                            </path>
+
                             <!-- Nawalparasi West -->
                             <path id="nawalparasi-west" class="district" d="M310,370 L340,400 L300,420 L270,390 Z"
                                 data-name="Nawalparasi West"
                                 data-info="Nawalparasi West has diverse geography. NCCAA runs health programs."></path>
-        
+
                             <!-- Rupandehi -->
                             <path id="rupandehi" class="district" d="M270,390 L300,420 L250,440 L220,400 Z"
                                 data-name="Rupandehi"
-                                data-info="Rupandehi is Buddha's birthplace. NCCAA coordinates cultural programs."></path>
-        
+                                data-info="Rupandehi is Buddha's birthplace. NCCAA coordinates cultural programs.">
+                            </path>
+
                             <!-- Kapilvastu -->
                             <path id="kapilvastu" class="district" d="M220,400 L250,440 L200,450 L180,420 L190,390 Z"
                                 data-name="Kapilvastu"
-                                data-info="Kapilvastu has archaeological sites. NCCAA focuses on heritage preservation."></path>
-        
+                                data-info="Kapilvastu has archaeological sites. NCCAA focuses on heritage preservation.">
+                            </path>
+
                             <!-- Province label -->
                             <text x="400" y="50" text-anchor="middle" font-family="Playfair Display" font-size="24"
                                 font-weight="bold" fill="var(--ncc-maroon)">Lumbini Province</text>
@@ -857,10 +868,10 @@
                 </div>
             </div>
         </section>
-        
+
         <!-- Info Panel Overlay -->
         <div class="overlay" id="overlay"></div>
-        
+
         <!-- District Info Panel -->
         <div class="info-panel" id="infoPanel">
             <h3 class="text-2xl font-bold font-serif text-ncc-maroon mb-2" id="districtName"></h3>
@@ -871,21 +882,24 @@
                     <li class="flex items-start">
                         <svg class="w-4 h-4 text-ncc-gold mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor"
                             viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7">
+                            </path>
                         </svg>
                         <span>Leadership development camps</span>
                     </li>
                     <li class="flex items-start">
                         <svg class="w-4 h-4 text-ncc-gold mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor"
                             viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7">
+                            </path>
                         </svg>
                         <span>Disaster response training</span>
                     </li>
                     <li class="flex items-start">
                         <svg class="w-4 h-4 text-ncc-gold mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor"
                             viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7">
+                            </path>
                         </svg>
                         <span>Community service programs</span>
                     </li>
@@ -919,30 +933,46 @@
             </div>
         </section>
 
-        <section id="products" class="py-24 bg-gray-900 overflow-hidden">
+        <section id="hall-of-fame" class="py-24 overflow-hidden" style="background-color:#3a5a40;">
             <div class="container mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-
-
+        
                     <!-- Left Column: Dynamic Text Content -->
                     <div class="text-center lg:text-left h-80 lg:h-auto flex flex-col justify-center">
-                        <div id="product-text-content" class="transition-opacity duration-300 ease-in-out">
-                            <!-- This content is  controlled entirely by JavaScript -->
+                        <div id="hof-text-content" class="transition-opacity duration-300 ease-in-out">
+                            <!-- Controlled by JS -->
                         </div>
                     </div>
-
+        
                     <!-- Right Column: Swiper Carousel -->
-                    <div class="products-swiper-container">
+                    <div class="hof-swiper-container relative">
                         <div class="swiper mySwiper">
-                            <div class="swiper-wrapper" id="products-swiper-wrapper">
-                                <!-- Product slides are populated by JavaScript -->
+                            <div class="swiper-wrapper" id="hof-swiper-wrapper">
+                                <!-- Populated by JS -->
                             </div>
+                        </div>
+        
+                        <!-- Navigation Arrows (bottom center) -->
+                        <div class="flex justify-center gap-6 mt-4">
+                            <button
+                                class="swiper-button-prev opacity-50 hover:opacity-100 transition p-2 bg-black/40 rounded-full">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" fill="none"
+                                    viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+                                </svg>
+                            </button>
+                            <button
+                                class="swiper-button-next opacity-50 hover:opacity-100 transition p-2 bg-black/40 rounded-full">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" fill="none"
+                                    viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                                </svg>
+                            </button>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-
         <section id="gallery" class="py-24 bg-white">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="text-center mb-20">
@@ -959,7 +989,8 @@
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="text-center max-w-3xl mx-auto mb-16">
                     <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Get In Touch</h2>
-                    <p class="mt-4 text-xl text-gray-600">Together, we uphold the spirit of discipline, unity, and service — connect with us today .</p>
+                    <p class="mt-4 text-xl text-gray-600">Together, we uphold the spirit of discipline, unity, and
+                        service — connect with us today .</p>
                 </div>
 
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
@@ -1055,8 +1086,10 @@
                                     </svg>
                                     <div>
                                         <h4 class="font-semibold text-gray-900">Address</h4>
-                                        <p class="text-gray-600">Butwal Sub-metropolitan City, Ward No. 10, Kalikanagar <br> Rupandehi, Lumbini,
-                                            Nepal</p>
+                                        <p class="text-gray-600">Butwal Sub-metropolitan City, Ward No. 10, Kalikanagar
+                                            <br> Rupandehi, Lumbini,
+                                            Nepal
+                                        </p>
                                     </div>
                                 </div>
                             </div>
@@ -1105,22 +1138,24 @@
                 <div>
                     <h3 class="text-white font-semibold mb-4 tracking-wider">Connect With Us</h3>
                     <div class="flex space-x-4">
-                        <a href="https://www.facebook.com/profile.php?id=61577886205816" target="_blank" rel="noopener noreferrer"
-                            class="transition-colors" style="color:#d7470a"><span class="sr-only">Facebook</span><svg
-                                class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                        <a href="https://www.facebook.com/profile.php?id=61577886205816" target="_blank"
+                            rel="noopener noreferrer" class="transition-colors" style="color:#d7470a"><span
+                                class="sr-only">Facebook</span><svg class="h-6 w-6" fill="currentColor"
+                                viewBox="0 0 24 24" aria-hidden="true">
                                 <path fill-rule="evenodd"
                                     d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
                                     clip-rule="evenodd" />
                             </svg></a>
-                        <a href="https://www.instagram.com/nccaa_lumbini/?igsh=MTF1NnBic3g2d3BqbQ%3D%3D#" target="_blank" rel="noopener noreferrer"
-                            class="transition-colors" style="color:#d7470a"><span class="sr-only">Instagram</span><svg
-                                class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                        <a href="https://www.instagram.com/nccaa_lumbini/?igsh=MTF1NnBic3g2d3BqbQ%3D%3D#"
+                            target="_blank" rel="noopener noreferrer" class="transition-colors"
+                            style="color:#d7470a"><span class="sr-only">Instagram</span><svg class="h-6 w-6"
+                                fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                                 <path fill-rule="evenodd"
                                     d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427C2.013 16.013 2 15.668 2 12.083c0-2.643.013-2.987.06-4.043.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353-.3.882-.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z"
                                     clip-rule="evenodd" />
                             </svg></a>
-                        <a href="https://wa.me/9769307983" target="_blank" rel="noopener noreferrer" class="transition-colors"
-                            style="color:#25D366">
+                        <a href="https://wa.me/9769307983" target="_blank" rel="noopener noreferrer"
+                            class="transition-colors" style="color:#25D366">
                             <span class="sr-only">WhatsApp</span>
                             <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                                 <path
@@ -1168,41 +1203,7 @@
             */
             document.getElementById('current-year').textContent = new Date().getFullYear();
 
-            const products = [
-
-                {
-                    img: "image/Aluminium-Recycling.webp",
-                    title: "Remelted Lead (RML)",
-                    desc: "Our base product, refined from recycled scrap to exceptional purity.",
-                    features: ["99.97% Guaranteed Purity", "Exceeds Industry Standards"]
-                },
-                {
-                    img: "image/3.jpeg",
-                    title: "Pure Lead",
-                    desc: "Precision-cast pure lead and custom alloys for specialized applications.",
-                    features: ["Uniform Weight & Purity", "Custom Alloy Compositions"]
-                },
-                {
-                    img: "image/plastic-granules-mobile.webp",
-                    title: "Lead Alloy (Antimony, Calcium, Selenium)",
-                    desc: "High-grade Red and Grey Lead Oxides for battery manufacturing and more.",
-                    features: ["High-Purity Grey Lead Oxide", "Premium Red Lead Oxide"]
-                },
-                {
-                    img: "image/plastic-granules-mobile.webp",
-                    title: "Lead Grey Oxide",
-                    desc: "High-grade Grey Lead Oxides for battery manufacturing and more.",
-                    features: ["High-Purity Grey Lead Oxide", "Premium Grey Lead Oxide"]
-                },
-                {
-                    img: "image/plastic-granules-mobile.webp",
-                    title: "Lead Red Oxide",
-                    desc: "High-grade Red Lead Oxides for battery manufacturing and more.",
-                    features: ["High-Purity Red Lead Oxide", "Premium Red Lead Oxide"]
-                },
-
-            ];
-           const galleryImages = [
+            const galleryImages = [
                 // Disaster Rescue & First Aid
                 { src: "assets/image/1.jpg", title: "Disaster Rescue and First Aid Training" },
                 { src: "assets/image/3.jpg", title: "First Aid Training Session" },
@@ -1251,7 +1252,7 @@
                 // NCC Events & Flag
                 { src: "assets/image/32.jpg", title: "NCC Flag Hoisting at Annual Event" },
                 { src: "assets/image/31.jpg", title: "NCC Headquarters Visit" },
-                { src: "assets/image/40.jpg", title: "NCC Training Event" },
+                { src: "assets/images/40.jpg", title: "NCC Training Event" },
 
                 // Special Ceremonial / Cultural
                 { src: "assets/image/28.jpg", title: "NCCAA Palpa Saluting at Shree 7 Rana Ujeshwori Bhagwati Jatra" },
@@ -1284,66 +1285,89 @@
             |--------------------------------------------------------------------------
             | This section now correctly handles text syncing without errors.
             */
-            const productTextContent = document.getElementById('product-text-content');
-            const productsWrapper = document.getElementById('products-swiper-wrapper');
+            const hallOfFame = [
+                {
+                    img: "assets/hallOfFame/1.png",
+                    title: "Maj Gen (Retd.) Dr. Ramindra Chhetri, PhD",
+                    desc: "Former Director General of NCC Nepal, renowned for strengthening training, discipline, and youth development. Currently Chief Patron of NCCAA, guiding alumni to uphold values of service, unity, and national responsibility.",
+                    features: [
+                        "Pioneered NCC training and youth programs",
+                        "Enhanced cadet contributions to nation-building",
+                        "Guides NCCAA alumni in leadership and civic engagement"
+                    ]
+                },
+                {
+                    img: "assets/hallOfFame/2.png",
+                    title: "Maj Gen (Retd.) Milan Parajuli, PhD",
+                    desc: "Former Director General of NCC Nepal, renowned for strengthening training, discipline, and youth development. Currently Chief Patron of NCCAA, guiding alumni to uphold values of service, unity, and national responsibility.",
+                    features: [
+                        "Pioneered NCC training and youth programs",
+                        "Enhanced cadet contributions to nation-building",
+                        "Guides NCCAA alumni in leadership and civic engagement"
+                    ]
+                },
+            ];
 
-            const updateProductText = (product) => {
-                productTextContent.innerHTML = `
-            <h2 class="text-base font-semibold" style="color:#d7470a;letter-spacing:0.1em;text-transform:uppercase">Our Products</h2>
-            <p class="mt-2 text-3xl font-bold tracking-tight" style="color:#888888">${product.title}</p>
-            <p class="mt-6 text-lg" style="color:#888888">${product.desc}</p>
-            <div class="mt-8 space-y-4" style="color:#888888;max-width:28rem;margin-left:auto;margin-right:auto">
-                ${product.features.map(feature => `
+            const hofTextContent = document.getElementById('hof-text-content');
+            const hofWrapper = document.getElementById('hof-swiper-wrapper');
+
+            const updateHofText = (person) => {
+                hofTextContent.innerHTML = `
+                <h1 class="text-center text-5xl font-extrabold mb-12" style="color: #f1faee;"> Hall of Fame </h1>
+                <p class="mt-2 text-3xl font-bold tracking-tight text-white">${person.title}</p>
+                <p class="mt-6 text-lg text-gray-200">${person.desc}</p>
+                <div class="mt-8 space-y-4 text-gray-200 max-w-md mx-auto lg:mx-0">
+                    ${person.features.map(f => `
                     <div class="flex items-center">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="#d7470a"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
-                        <span class="ml-3">${feature}</span>
-                    </div>
-                `).join('')}
-            </div>
-        `;
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="#ffb703">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+        </svg>
+        <span class="ml-3">${f}</span>
+        </div>
+        `).join('')}
+    </div>
+    `;
             };
 
-            // Populate the Swiper slides from the product data array.
-            const allSlidesData = [...products, ...products]; // Duplicate for a seamless loop
-            allSlidesData.forEach(product => {
+            // Populate Swiper slides (smaller images)
+            hallOfFame.forEach(p => {
                 const slide = document.createElement('div');
-                slide.className = 'swiper-slide';
+                slide.className = 'swiper-slide flex justify-center';
                 slide.innerHTML = `
-            <div class="p-6 w-full h-full flex flex-col text-left">
-                <img src="${product.img}" alt="${product.title}" class="rounded-lg mb-4 w-full h-40 object-cover"/>
-                <h3 class="text-xl font-bold text-white mb-2">${product.title}</h3>
-                <p class="text-sm font-normal text-gray-300 mb-4 flex-grow">${product.desc}</p>
-            </div>
-        `;
-                productsWrapper.appendChild(slide);
+                <div class="flex flex-col items-center max-w-sm">
+                    <img src="${p.img}" alt="${p.title}" class="rounded-lg w-full h-64 object-cover"/>
+                    <h3 class="text-lg font-bold text-white mt-2">${p.title}</h3>
+                </div>`;
+                hofWrapper.appendChild(slide);
             });
 
-            // Set the initial text before initializing Swiper.
-            updateProductText(allSlidesData[0]);
+            // Initial text
+            updateHofText(hallOfFame[0]);
 
-            // Initialize Swiper.
+            // Swiper init
             const swiper = new Swiper(".mySwiper", {
-                effect: "cards",
-                grabCursor: true,
+                slidesPerView: 1,
                 loop: true,
                 autoplay: {
-                    delay: 3500,
+                    delay: 4000,
                     disableOnInteraction: false,
                 },
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                }
             });
 
-            // Use the single 'slideChange' event for the most reliable animation sync.
-            swiper.on('slideChange', function () {
-                productTextContent.classList.add('opacity-0');
-
+            // Sync text
+            swiper.on('slideChange', () => {
+                const activePerson = hallOfFame[swiper.realIndex];
+                hofTextContent.classList.add('opacity-0');
                 setTimeout(() => {
-                    const activeProduct = allSlidesData[swiper.realIndex];
-                    if (activeProduct) {
-                        updateProductText(activeProduct);
-                        productTextContent.classList.remove('opacity-0');
-                    }
+                    updateHofText(activePerson);
+                    hofTextContent.classList.remove('opacity-0');
                 }, 200);
             });
+
 
             /*
             |--------------------------------------------------------------------------
@@ -1463,53 +1487,53 @@
 
 
         document.addEventListener('DOMContentLoaded', function () {
-                const districts = document.querySelectorAll('.district');
-                const infoPanel = document.getElementById('infoPanel');
-                const overlay = document.getElementById('overlay');
-                const districtName = document.getElementById('districtName');
-                const districtInfo = document.getElementById('districtInfo');
+            const districts = document.querySelectorAll('.district');
+            const infoPanel = document.getElementById('infoPanel');
+            const overlay = document.getElementById('overlay');
+            const districtName = document.getElementById('districtName');
+            const districtInfo = document.getElementById('districtInfo');
 
-                // Show district info
-                function showDistrictInfo(district) {
-                    const name = district.getAttribute('data-name');
-                    const info = district.getAttribute('data-info');
+            // Show district info
+            function showDistrictInfo(district) {
+                const name = district.getAttribute('data-name');
+                const info = district.getAttribute('data-info');
 
-                    districtName.textContent = name;
-                    districtInfo.textContent = info;
+                districtName.textContent = name;
+                districtInfo.textContent = info;
 
-                    // Highlight selected district
-                    districts.forEach(d => d.classList.remove('active'));
-                    district.classList.add('active');
+                // Highlight selected district
+                districts.forEach(d => d.classList.remove('active'));
+                district.classList.add('active');
 
-                    // Show panel and overlay
-                    infoPanel.classList.add('active');
-                    overlay.classList.add('active');
-                }
+                // Show panel and overlay
+                infoPanel.classList.add('active');
+                overlay.classList.add('active');
+            }
 
-                // Hide district info
-                function hideDistrictInfo() {
-                    infoPanel.classList.remove('active');
-                    overlay.classList.remove('active');
-                    districts.forEach(d => d.classList.remove('active'));
-                }
+            // Hide district info
+            function hideDistrictInfo() {
+                infoPanel.classList.remove('active');
+                overlay.classList.remove('active');
+                districts.forEach(d => d.classList.remove('active'));
+            }
 
-                // Add click event to districts
-                districts.forEach(district => {
-                    district.addEventListener('click', function (e) {
-                        e.stopPropagation();
-                        showDistrictInfo(this);
-                    });
-                });
-
-                // Close when clicking overlay or anywhere else
-                overlay.addEventListener('click', hideDistrictInfo);
-                document.addEventListener('click', hideDistrictInfo);
-
-                // Prevent panel from closing when clicking inside it
-                infoPanel.addEventListener('click', function (e) {
+            // Add click event to districts
+            districts.forEach(district => {
+                district.addEventListener('click', function (e) {
                     e.stopPropagation();
+                    showDistrictInfo(this);
                 });
             });
+
+            // Close when clicking overlay or anywhere else
+            overlay.addEventListener('click', hideDistrictInfo);
+            document.addEventListener('click', hideDistrictInfo);
+
+            // Prevent panel from closing when clicking inside it
+            infoPanel.addEventListener('click', function (e) {
+                e.stopPropagation();
+            });
+        });
     </script>
 </body>
 
